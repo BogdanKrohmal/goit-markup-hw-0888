@@ -1,0 +1,127 @@
+.header {
+  background-color: var(--stud-main-h1-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+  border-top: 1px #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.connect {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.connect__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.current {
+    color: var(--stud-hover-focus-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--stud-hover-focus-color);
+  }
+}
+
+.menu {
+  color: var(--stud-hover-focus-color);
+  display: flex;
+  gap: 50px;
+  & .menu__link.current {
+    position: relative;
+  }
+  & .menu__link.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    /* margin-left: -1px; */
+    top: 46px;
+    background-size: cover;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+/* .header-list::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  margin-left: -1px;
+  top: 77px;
+
+  background: #2196f3;
+  border-radius: 2px;
+} */
+
+
+.logo-link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-link-part {
+  font-family: "Raleway", "sans serife";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+}
+
+.connect__mail,
+.connect__tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--header-mail-color);
+  display: flex;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--stud-hover-focus-color);
+  }
+}
+
+/* .portfolio-btn:hover {
+  background-color: #2196f3;
+} */

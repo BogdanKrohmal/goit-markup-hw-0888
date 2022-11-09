@@ -1,0 +1,46 @@
+.what-we-do {
+    background-color: var(--stud-main-h1-color);
+    padding-bottom: 94px;
+    align-items: center;
+}
+
+.what-we-do-list {
+    display: flex;
+    gap: 30px;
+}
+
+.what-we-do-item {
+    position: relative;
+}
+
+.what-we-do-item-title {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    padding: 27px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.what-we-do-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--stud-title-color);
+    margin-bottom: 50px;
+}
